@@ -21,7 +21,14 @@ body{
 
 .container{
     position:relative;
-    width:500px;   /* عدلها حسب حجم صورتك */
+    width:500px;
+    transform-origin: top center;
+}
+
+@media (max-width: 600px){
+    .container{
+        transform: scale(0.7);
+    }
 }
 
 .main-image{
