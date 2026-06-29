@@ -32,30 +32,46 @@ body{
 /* الأرقام */
 .point{
     position:absolute;
-    width:35px;
-    height:35px;
-    background:#1976d2;
+    width:18px;
+    height:18px;
+    background:rgba(25,118,210,0.4);
     color:white;
     border-radius:50%;
     text-align:center;
-    line-height:35px;
-    font-size:20px;
+    line-height:18px;
+    font-size:10px;
     font-weight:bold;
+    cursor:pointer;
+}
+.circle{
+    position:absolute;
+
+    width: 140px;;
+    height: 140px;;
+
+    border:40px solid #1976d2;   /* الدائرة المفرغة */
+    border-radius:50%;
+
     cursor:pointer;
 }
 
 /* نافذة الصورة */
 .popup{
-    position:absolute;
-    left:50px;
-    top:-20px;
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
     display:none;
-    width:250px;
+    width:280px;
+    max-width:90vw;
     background:white;
-    padding:5px;
-    border-radius:10px;
+    padding:8px;
+    border-radius:12px;
     box-shadow:0 0 20px rgba(0,0,0,.3);
+    z-index:999;
 }
+
+
 
 .popup img{
     width:100%;
@@ -65,42 +81,174 @@ body{
 .point:hover .popup{
     display:block;
 }
+.circle:hover .popup{
+    display:block;
+}
+
+/* خلفية الرسالة */
+.welcome-popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.5);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:10000;
+}
+
+/* صندوق الرسالة */
+.welcome-box{
+    position:relative;
+
+    background:white;
+    width:400px;
+    max-width:90vw;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 0 30px rgba(0,0,0,.3);
+}
+
+/* زر الإغلاق */
+.close-btn{
+    position:absolute;
+
+    top:10px;
+    right:15px;
+
+    font-size:24px;
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+.close-btn:hover{
+    color:red;
+}
 
 /* أماكن الأرقام */
 
-/* 1 */
-#p1{
-    left:15px;
-    top:120px;
-}
+#p1{ right:1px; bottom:40px; }
+#p2{ right:1px; bottom:70px; }
+#p3{ right:1px; bottom:100px; }
+#p4{ right:1px; bottom:130px; }
+#p5{ right:1px; bottom:160px; }
+#p6{ right:1px; bottom:190px; }
+#p7{ right:1px; bottom:220px; }
 
-/* 2 */
-#p2{
-    left:15px;
-    top:200px;
-}
+#p8{ right:1px; bottom:280px; }
+#p9{ right:1px; bottom:302px; }
+#p10{ right:1px; bottom:324px; }
+#p11{ right:1px; bottom:346px; }
+#p12{ right:1px; bottom:368px; }
+#p13{ right:1px; bottom:390px; }
+#p14{ right:1px; bottom:412px; }
 
-/* 3 */
-#p3{
-    right:15px;
-    bottom:180px;
-}
+#p15{ right:1px; bottom:434px; }
+#p16{ right:1px; bottom:456px; }
+#p17{ right:1px; bottom:478px; }
+#p18{ right:1px; bottom:500px; }
+#p19{ right:1px; bottom:522px; }
+#p20{ right:1px; bottom:544px; }
+#p21{ right:1px; bottom:566px; }
 
-/* 4 */
-#p4{
-    right:15px;
-    bottom:260px;
-}
+#p22{ right:1px; bottom:588px; }
+#p23{ right:1px; bottom:610px; }
+#p24{ right:1px; bottom:632px; }
+#p25{ right:1px; bottom:654px; }
+#p26{ right:1px; bottom:676px; }
+#p27{ right:1px; bottom:698px; }
+#p28{ right:1px; bottom:720px; }
+#p29{ right:40px; top:9px; width:420px; height:16px; line-height:16px; border-radius:3px; }
+#p30{ right:40px; top:30px; width:420px; height:16px; line-height:16px; border-radius:3px; }
+#p31{ right:348px; bottom:335px; }
+#p1l{ right:500px; bottom:40px; }
+#p2l{ right:500px; bottom:70px; }
+#p3l{ right:500px; bottom:100px; }
+#p4l{ right:500px; bottom:130px; }
+#p5l{ right:500px; bottom:160px; }
+#p6l{ right:500px; bottom:190px; }
+#p7l{ right:500px; bottom:220px; }
+
+#p8l{ right:500px; bottom:280px; }
+#p9l{ right:500px; bottom:302px; }
+#p10l{ right:500px; bottom:324px; }
+#p11l{ right:500px; bottom:346px; }
+#p12l{ right:500px; bottom:368px; }
+#p13l{ right:500px; bottom:390px; }
+#p14l{ right:500px; bottom:412px; }
+
+#p15l{ right:500px; bottom:434px; }
+#p16l{ right:500px; bottom:456px; }
+#p17l{ right:500px; bottom:478px; }
+#p18l{ right:500px; bottom:500px; }
+#p19l{ right:500px; bottom:522px; }
+#p20l{ right:500px; bottom:544px; }
+#p21l{ right:500px; bottom:566px; }
+
+#p22l{ right:500px; bottom:588px; }
+#p23l{ right:500px; bottom:610px; }
+#p24l{ right:500px; bottom:632px; }
+#p25l{ right:500px; bottom:654px; }
+#p26l{ right:500px; bottom:676px; }
+#p27l{ right:500px; bottom:698px; }
+#p28l{ right:500px; bottom:720px; }
+#p32{ right: 280px;; bottom:280px; }
 </style>
 </head>
 
 <body>
+<!-- رسالة الترحيب -->
+<div id="welcomePopup" class="welcome-popup">
 
+    <div class="welcome-box">
+
+        <span class="close-btn"
+              onclick="document.getElementById('welcomePopup').style.display='none'">
+            ✖
+        </span>
+
+        <h2>مرحبًا بك</h2>
+
+        <p>
+            قف بالماوس او اضغط فى حالة استخدام الهاتف على أحد الأرقام لرؤية النبات المراد وضعه فى هذا الجزء
+        </p>
+
+    </div>
+
+</div>
 <div class="container">
 
     <!-- صورة اللاندسكيب -->
     <img src="12345.jpeg" class="main-image">
+    <svg id="p32" width="230" height="220"
+     style="position:absolute; right:230px; bottom:230px; overflow:visible;">
 
+    <circle
+    cx="110"
+    cy="110"
+    r="40"
+    fill="none"
+    stroke="rgba(25,118,210,0.3)"
+    stroke-width="40"
+    onmouseover="document.getElementById('popup32').style.display='block'"
+    onmouseout="document.getElementById('popup32').style.display='none'"
+/>
+</svg>
+
+<div class="popup" id="popup32">
+    <img src="img11.jpeg">
+</div>
     <!-- رقم 1 -->
     <div class="point" id="p1">
         1
@@ -132,6 +280,449 @@ body{
             <img src="img4.jpeg">
         </div>
     </div>
+
+    <!-- رقم 5 -->
+    <div class="point" id="p5">
+        5
+        <div class="popup">
+            <img src="img5.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 6 -->
+    <div class="point" id="p6">
+        6
+        <div class="popup">
+            <img src="img6.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 7 -->
+    <div class="point" id="p7">
+        7
+        <div class="popup">
+            <img src="img7.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 8 -->
+    <div class="point" id="p8">
+        1
+        <div class="popup">
+            <img src="img1.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 9 -->
+    <div class="point" id="p9">
+        2
+        <div class="popup">
+            <img src="img2.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 10 -->
+    <div class="point" id="p10">
+        3
+        <div class="popup">
+            <img src="img3.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 11 -->
+    <div class="point" id="p11">
+        4
+        <div class="popup">
+            <img src="img4.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 12 -->
+    <div class="point" id="p12">
+        5
+        <div class="popup">
+            <img src="img5.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 13 -->
+    <div class="point" id="p13">
+        6
+        <div class="popup">
+            <img src="img6.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 14 -->
+    <div class="point" id="p14">
+        7
+        <div class="popup">
+            <img src="img7.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 15 -->
+    <div class="point" id="p15">
+        1
+        <div class="popup">
+            <img src="img1.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 16 -->
+    <div class="point" id="p16">
+        2
+        <div class="popup">
+            <img src="img2.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 17 -->
+    <div class="point" id="p17">
+        3
+        <div class="popup">
+            <img src="img3.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 18 -->
+    <div class="point" id="p18">
+        4
+        <div class="popup">
+            <img src="img4.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 19 -->
+    <div class="point" id="p19">
+        5
+        <div class="popup">
+            <img src="img5.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 20 -->
+    <div class="point" id="p20">
+        6
+        <div class="popup">
+            <img src="img6.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 21 -->
+    <div class="point" id="p21">
+        7
+        <div class="popup">
+            <img src="img7.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 22 -->
+    <div class="point" id="p22">
+        1
+        <div class="popup">
+            <img src="img1.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 23 -->
+    <div class="point" id="p23">
+        2
+        <div class="popup">
+            <img src="img2.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 24 -->
+    <div class="point" id="p24">
+        3
+        <div class="popup">
+            <img src="img3.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 25 -->
+    <div class="point" id="p25">
+        4
+        <div class="popup">
+            <img src="img4.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 26 -->
+    <div class="point" id="p26">
+        5
+        <div class="popup">
+            <img src="img5.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 27 -->
+    <div class="point" id="p27">
+        6
+        <div class="popup">
+            <img src="img6.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 28 -->
+    <div class="point" id="p28">
+        7
+        <div class="popup">
+            <img src="img7.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 29 -->
+    <div class="point" id="p29">
+        8
+        <div class="popup">
+            <img src="img8.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 30 -->
+    <div class="point" id="p30">
+        9
+        <div class="popup">
+            <img src="img9.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 31 -->
+    <div class="point" id="p31">
+        10
+        <div class="popup">
+            <img src="img10.jpeg">
+        </div>
+    </div>
+
+
+    <!-- رقم 1 -->
+    <div class="point" id="p1l">
+        1
+        <div class="popup">
+            <img src="img1.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 2 -->
+    <div class="point" id="p2l">
+        2
+        <div class="popup">
+            <img src="img2.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 3 -->
+    <div class="point" id="p3l">
+        3
+        <div class="popup">
+            <img src="img3.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 4 -->
+    <div class="point" id="p4l">
+        4
+        <div class="popup">
+            <img src="img4.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 5 -->
+    <div class="point" id="p5l">
+        5
+        <div class="popup">
+            <img src="img5.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 6 -->
+    <div class="point" id="p6l">
+        6
+        <div class="popup">
+            <img src="img6.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 7 -->
+    <div class="point" id="p7l">
+        7
+        <div class="popup">
+            <img src="img7.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 8 -->
+    <div class="point" id="p8l">
+        1
+        <div class="popup">
+            <img src="img1.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 9 -->
+    <div class="point" id="p9l">
+        2
+        <div class="popup">
+            <img src="img2.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 10 -->
+    <div class="point" id="p10l">
+        3
+        <div class="popup">
+            <img src="img3.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 11 -->
+    <div class="point" id="p11l">
+        4
+        <div class="popup">
+            <img src="img4.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 12 -->
+    <div class="point" id="p12l">
+        5
+        <div class="popup">
+            <img src="img5.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 13 -->
+    <div class="point" id="p13l">
+        6
+        <div class="popup">
+            <img src="img6.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 14 -->
+    <div class="point" id="p14l">
+        7
+        <div class="popup">
+            <img src="img7.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 15 -->
+    <div class="point" id="p15l">
+        1
+        <div class="popup">
+            <img src="img1.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 16 -->
+    <div class="point" id="p16l">
+        2
+        <div class="popup">
+            <img src="img2.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 17 -->
+    <div class="point" id="p17l">
+        3
+        <div class="popup">
+            <img src="img3.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 18 -->
+    <div class="point" id="p18l">
+        4
+        <div class="popup">
+            <img src="img4.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 19 -->
+    <div class="point" id="p19l">
+        5
+        <div class="popup">
+            <img src="img5.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 20 -->
+    <div class="point" id="p20l">
+        6
+        <div class="popup">
+            <img src="img6.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 21 -->
+    <div class="point" id="p21l">
+        7
+        <div class="popup">
+            <img src="img7.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 22 -->
+    <div class="point" id="p22l">
+        1
+        <div class="popup">
+            <img src="img1.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 23 -->
+    <div class="point" id="p23l">
+        2
+        <div class="popup">
+            <img src="img2.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 24 -->
+    <div class="point" id="p24l">
+        3
+        <div class="popup">
+            <img src="img3.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 25 -->
+    <div class="point" id="p25l">
+        4
+        <div class="popup">
+            <img src="img4.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 26 -->
+    <div class="point" id="p26l">
+        5
+        <div class="popup">
+            <img src="img5.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 27 -->
+    <div class="point" id="p27l">
+        6
+        <div class="popup">
+            <img src="img6.jpeg">
+        </div>
+    </div>
+
+    <!-- نقطة 28 -->
+    <div class="point" id="p28l">
+        7
+        <div class="popup">
+            <img src="img7.jpeg">
+        </div>
+    </div>
+
+    
 
 </div>
 
