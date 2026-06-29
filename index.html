@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landscape Hover Popup</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#eee;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.container{
+    position:relative;
+    width:500px;   /* عدلها حسب حجم صورتك */
+}
+
+.main-image{
+    width:100%;
+    display:block;
+}
+
+/* الأرقام */
+.point{
+    position:absolute;
+    width:35px;
+    height:35px;
+    background:#1976d2;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    line-height:35px;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* نافذة الصورة */
+.popup{
+    position:absolute;
+    left:50px;
+    top:-20px;
+    display:none;
+    width:250px;
+    background:white;
+    padding:5px;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+.popup img{
+    width:100%;
+    border-radius:8px;
+}
+
+.point:hover .popup{
+    display:block;
+}
+
+/* أماكن الأرقام */
+
+/* 1 */
+#p1{
+    left:15px;
+    top:120px;
+}
+
+/* 2 */
+#p2{
+    left:15px;
+    top:200px;
+}
+
+/* 3 */
+#p3{
+    right:15px;
+    bottom:180px;
+}
+
+/* 4 */
+#p4{
+    right:15px;
+    bottom:260px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- صورة اللاندسكيب -->
+    <img src="12345.jpeg" class="main-image">
+
+    <!-- رقم 1 -->
+    <div class="point" id="p1">
+        1
+        <div class="popup">
+            <img src="img1.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 2 -->
+    <div class="point" id="p2">
+        2
+        <div class="popup">
+            <img src="img2.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 3 -->
+    <div class="point" id="p3">
+        3
+        <div class="popup">
+            <img src="img3.jpeg">
+        </div>
+    </div>
+
+    <!-- رقم 4 -->
+    <div class="point" id="p4">
+        4
+        <div class="popup">
+            <img src="img4.jpeg">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
